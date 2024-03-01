@@ -1,9 +1,8 @@
-a = []
-l, n = map(int, input().split())
-for i in range(1, l+1):
-    if i%2 != 0:
-        a.append(i)
-for i in range(1, l+1):
-    if i%2 == 0:
-        a.append(i)
-print(a[n+1])
+n, k = map(int, input().split())
+
+if k <= (n + 1) // 2:
+    result = 2 * k - 1
+else:
+    result = 2 * (k - (n + 1) // 2)
+
+print(result)
