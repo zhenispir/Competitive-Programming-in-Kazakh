@@ -17,3 +17,4 @@ for i in range(n):
         else:
             d += a[r]
             r -= 1
+print(s,d)
